@@ -1,0 +1,10 @@
+.atroposes {
+  width: 250px;
+  display: flex;
+}
+
+.des-atropos {
+  width: 250px;
+  height: auto;
+  margin: 10px;
+}
