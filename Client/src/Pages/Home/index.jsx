@@ -131,7 +131,7 @@ export default function Home() {
                   x: window.innerWidth,
                   transition: {
                     duration: 5,
-                    type: "spring",
+                    // type: "spring",
                     ease: "easeOut",
                   },
                 }}

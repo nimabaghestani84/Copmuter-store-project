@@ -97,6 +97,7 @@ export default function Navbar({ change, check }) {
           alignItems={"center"}
           direction={"row"}
         >
+          {/* small menu start */}
           <IconButton
             size="large"
             edge="start"
@@ -113,6 +114,9 @@ export default function Navbar({ change, check }) {
           >
             <MenuIcon />
           </IconButton>
+          {/* small menu end */}
+        
+        {/* drawer menu start */}
           <Drawer
             sx={{ zIndex: "100000" }}
             anchor="left"
@@ -141,6 +145,9 @@ export default function Navbar({ change, check }) {
               </Stack>
             </Box>
           </Drawer>
+          {/* drawer menu end */}
+
+          {/* Auth icon start */}
           <Link to={"/auth"}>
             {/* <IconButton sx={{ fontSize: "2rem", color: "text.main" }}> */}
             <Stack width={'50px'} height={'30px'} alignItems={'center'} justifyContent={'center'}>
@@ -151,8 +158,10 @@ export default function Navbar({ change, check }) {
               <LogoutIcon  sx={{color:'text.main'}}/>
                 </Button>}
               </Stack>
-            {/* </IconButton> */}
           </Link>
+          {/* Auth icon end */}
+
+          {/* Cart icon start */}
           <Link to={'/cart'}>
           <IconButton sx={{ fontSize: "2rem", color: "text.main" }}>
           <Badge badgeContent={list} color="primary">
@@ -160,13 +169,18 @@ export default function Navbar({ change, check }) {
       </Badge>
           </IconButton>
           </Link>
+          {/* Cart icon end */}
 
+          {/* search icon start */}
           <IconButton
             onClick={() => setSearchBox(true)}
             sx={{ fontSize: "2rem", color: "text.main" }}
           >
             <SearchIcon />
           </IconButton>
+          {/* search icon end */}
+
+          {/* dark mode swich start */}
           <Stack mx={'20px'} direction={'row'} width={'100px'} height={'50px'} alignItems={'center'} justifyContent={'center'} gap={'5px'}>
           <LightModeIcon/>
           <Switch
@@ -177,6 +191,8 @@ export default function Navbar({ change, check }) {
             />
             <DarkModeIcon/>
             </Stack>
+         {/* dark mode swich end */}
+
         </Stack>
 
         {/* page links start */}
